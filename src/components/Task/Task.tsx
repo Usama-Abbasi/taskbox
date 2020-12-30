@@ -32,7 +32,7 @@ const Task: React.FC<TaskProps> = ({ task: { id, title, state }, onArchiveTask, 
 
             <div className="actions" onClick={event => event.stopPropagation()}>
                 {state !== 'TASK_ARCHIVED' && (
-                    <a onClick={() => dispatch(pinTask(id))}>
+                    <a href="" onClick={() => dispatch(pinTask(id))}>
                         <span className={`icon-star`} />
                     </a>
                 )}
